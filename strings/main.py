@@ -35,5 +35,5 @@ print(name_short)
 chant = (len(first_name) * (first_name + "! ")).rstrip()
 print(chant)
 
-good_chant = " " != chant[-1]
+good_chant = chant[-1]  != " "
 print(good_chant)
