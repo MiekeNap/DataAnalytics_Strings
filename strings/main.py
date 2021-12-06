@@ -14,7 +14,7 @@ goal_1 = 54
 scorers = scorer_0 + " " + str(goal_0) + ", " + scorer_1 + " " + str(goal_1)
 print(scorers)
 
-report = f"{scorer_0} scored in the {goal_0}nd minute" "\n" f"{scorer_1} scored in the {goal_1}th minute"
+report = f"{scorer_0} scored in the {goal_0}nd minute\n{scorer_1} scored in the {goal_1}th minute"
 print(report)
 
 # Part 2
