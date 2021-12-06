@@ -21,19 +21,21 @@ print(report)
 
 player = "Erwin Koeman"
 
-print(player.find("Erwin"))
-first_name = player[0:5]
+location_end_first_name = player.find(" ")
+print(location_end_first_name)
+first_name = player[:location_end_first_name]
 print(first_name)
 
-print(player.find("Koeman"))
-last_name_len = len(player[6:])
+location_start_last_name = player.find(" ") + 1
+print(location_start_last_name)
+last_name_len = len(player[location_start_last_name:])
 print(last_name_len)
 
-name_short = player[0] + ". " + player[6:]
+name_short = player[0] + ". " + player[location_start_last_name:]
 print(name_short)
 
 chant = (len(first_name) * (first_name + "! ")).rstrip()
 print(chant)
 
-good_chant = chant[-1]  != " "
+good_chant = chant[-1] != " "
 print(good_chant)
